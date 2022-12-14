@@ -65,7 +65,7 @@ Standard deviation of the interday returns is also considered to see how much th
 ## Model Building
 After imputing missing values and executing Principal Component Analysis on the numerical data columns, the categorical data was transformed into dummy variable columns using Pandas' get_dummies() feature. <br>
 The data was split into training (70%) and testing (30%) data. <br>
-We tried two different models:
+I tried two different models:
 <ul>
   <li> <strong>Random Forest Regressor</strong>: For baseline model
   <li> <strong>Multi Layer Perceptron Regressor (MLPReggresor)</strong>: Since the data involved feature values of different ranges, I thought a Multi Layer Perceptron model will be resistent to those variations 
