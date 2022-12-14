@@ -46,16 +46,16 @@ Each row in the dataset is an arbitrary stock at an arbitrary 5 day time window.
 * <strong>Multi Output Regressor</strong>
 
 ## Exploratory Data Analysis
-Exploratory Data Analysis  is performed to explore the structure of the data, identify categorical and continuos data feilds, missing values, and corelations amongst different data columns <br> 
+Exploratory Data Analysis  is performed to explore the structure of the data, identify categorical and continuous data fields, missing values, and correlations amongst different data columns <br> 
 <p>
   Corelation Heatmap between diffent features:
 </p>
 <img src="https://github.com/ritikashrivastava16/The-Winton-Stock-Market-Challenge/blob/main/images/heatmap.png" width=500>
 
 ## Feature Engineering
-As observed in the corelation heatmap above, alot of features are strongly corelated to each other. This means that it is possibble to apply Dimentionality Reduction methods such as Principle Component Analysis. <br>
+As observed in the correlation heatmap above, alot of features are strongly correlated to each other. This means that it is possibble to apply Dimentionality Reduction methods such as Principal Component Analysis. <br>
 __Principal component analysis (PCA)__ is the process of computing the principal components and using them to perform a change of basis on the data, sometimes using only the first few principal components and ignoring the rest. <br>
-The optimum number of principle components can be found by observing the variance for different sets of components. The set with variance closest to one is concidered as the one with optimum number of principle components.
+The optimum number of principal components can be found by observing the variance for different sets of components. The set with variance closest to one is concidered as the one with optimum number of principal components.
 <img src="https://github.com/ritikashrivastava16/The-Winton-Stock-Market-Challenge/blob/main/images/pca.png" width=400>
 <br>
 Here we can observe that the optimum number of components is 12 <br>
@@ -63,9 +63,9 @@ To simplify the problem, the intraday returns are aggregated as sum and standard
 Standard deviation of the interday returns is also considered to see how much the returns vary.
 
 ## Model Building
-After imputing missing values and executing Principle Component Analysis on the numerical data columns, the categorical data was transformed into dummy variable columns using Pandas' get_dummies() feature. <br>
+After imputing missing values and executing Principal Component Analysis on the numerical data columns, the categorical data was transformed into dummy variable columns using Pandas' get_dummies() feature. <br>
 The data was split into training (70%) and testing (30%) data. <br>
-I tried two different models:
+We tried two different models:
 <ul>
   <li> <strong>Random Forest Regressor</strong>: For baseline model
   <li> <strong>Multi Layer Perceptron Regressor (MLPReggresor)</strong>: Since the data involved feature values of different ranges, I thought a Multi Layer Perceptron model will be resistent to those variations 
