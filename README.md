@@ -39,7 +39,7 @@ Each row in the dataset is an arbitrary stock at an arbitrary 5 day time window.
 * <strong>Seaborn</strong>
 * <strong>Plotly</strong>
 * <strong>Scikit Learn</strong>
-* <strong>Principle Componnent Analysis</strong>
+* <strong>Principle Component Analysis</strong>
 * <strong>Iterative Imputer</strong>
 * <strong>Random Forest Regressor</strong>
 * <strong>Multi-layer Perceptron Regressor</strong>
