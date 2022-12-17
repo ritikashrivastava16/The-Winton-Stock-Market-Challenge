@@ -55,7 +55,7 @@ Exploratory Data Analysis  is performed to explore the structure of the data, id
 ## Feature Engineering
 As observed in the correlation heatmap above, a lot of features are strongly correlated to each other. This means that it is possibble to apply Dimentionality Reduction methods such as Principal Component Analysis. <br>
 __Principal component analysis (PCA)__ is the process of computing the principal components and using them to perform a change of basis on the data, sometimes using only the first few principal components and ignoring the rest. <br>
-The optimum number of principal components can be found by observing the variance for different sets of components. The set with variance closest to one is concidered as the one with optimum number of principal components.
+The optimum number of principal components can be found by observing the variance for different sets of components. The set with variance closest to one is considered as the one with optimum number of principal components.
 <img src="https://github.com/ritikashrivastava16/The-Winton-Stock-Market-Challenge/blob/main/images/pca.png" width=400>
 <br>
 Here we can observe that the optimum number of components is 12 <br>
